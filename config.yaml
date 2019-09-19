@@ -27,7 +27,7 @@ uplinks:
 packages:
   '@*/*':
     # scoped packages
-    access: $all
+    access: $authenticated
     publish: $authenticated
 
     #代理 表示没有的仓库会去这个npmjs 里面去找 ,
@@ -39,7 +39,7 @@ packages:
     # "$all", "$anonymous", "$authenticated"
 
     #是否可访问所需要的权限
-    access: $all
+    access: $authenticated
 
     #发布package 的权限
     publish: $authenticated
