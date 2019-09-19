@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  verdaccio:
+    image: gaofeng0300/docker-npm:lastest
+    user: root
+    working_dir: /usr
+    restart: always
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 4873:4873
+    command: pm2-runtime start verdaccio
+    volumes:
+      - /usr/docker-volume/verdaccio/conf:/verdaccio/conf
+      - /usr/docker-volume/verdaccio/storege:/verdaccio/storege
+    container_name: "docker-verdaccio"
