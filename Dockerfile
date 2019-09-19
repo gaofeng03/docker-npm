@@ -1,6 +1,4 @@
-# verdaccio/verdaccio:4
-
-FROM verdaccio/verdaccio:lastest
+FROM verdaccio/verdaccio:4
 
 RUN npm i pm2 -g
 
