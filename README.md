@@ -1,2 +1,3 @@
 # docker-npm
-使用 docker 将 npm 私有化
+
+* Using docker to privatize NPM
