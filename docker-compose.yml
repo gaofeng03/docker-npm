@@ -1,7 +1,7 @@
 version: "3.7"
 services:
   verdaccio:
-    image: gaofeng0300/docker-npm:lastest
+    image: gaofeng0300/docker-npm:latest
     user: root
     # working_dir: /verdaccio
     restart: always
