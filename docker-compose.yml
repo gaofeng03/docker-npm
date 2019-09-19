@@ -2,8 +2,8 @@ version: "3.7"
 services:
   verdaccio:
     image: gaofeng0300/docker-npm:lastest
-    user: root
-    working_dir: /usr
+    # user: root
+    # working_dir: /verdaccio
     restart: always
     environment:
       - NODE_ENV=production
