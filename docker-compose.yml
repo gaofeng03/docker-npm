@@ -11,6 +11,5 @@ services:
       - 4873:4873
     command: pm2-runtime start verdaccio
     volumes:
-      - /usr/docker-volume/verdaccio/conf:/verdaccio/conf
       - /usr/docker-volume/verdaccio/storege:/verdaccio/storege
     container_name: "docker-verdaccio"
